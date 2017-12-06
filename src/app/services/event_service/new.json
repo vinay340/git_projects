@@ -1,0 +1,42 @@
+{
+    "event_management": {
+      "current_user": "Vinay",
+      "event_details": [
+        {
+          "event_id": 1,
+          "event_name": "singing competition",
+          "event_rules": [
+            "sing rule #1",
+            "sing rule #2",
+            "sing rule #3"
+          ],
+          "is_active": true
+        },
+        {
+          "event_id": 2,
+          "event_name": "painting competition",
+          "event_rules": [
+            "paint rule #1",
+            "paint rule #2",
+            "paint rule #3"
+          ],
+          "is_active": false
+        },
+        {
+          "event_id": 3,
+          "event_name": "dance competition",
+          "event_rules": [
+            "dance rule #1",
+            "dance rule #2",
+            "dance rule #3"
+          ],
+          "is_active": true
+        }
+      ],
+      "common_rules": [
+        "common rule #1",
+        "common rule #2",
+        "common rule #3"
+      ]
+    }
+  }

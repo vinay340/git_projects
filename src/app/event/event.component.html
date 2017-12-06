@@ -1,0 +1,99 @@
+
+<div id="wrapper">
+<app-first></app-first>
+<div id="page-content-wrapper">
+    <div id="page-content">
+<div class="container-fluid" >
+    <div class="col-md-4" *ngFor="let i of arr "  >
+            <div class="column"> 
+              
+              <!-- Post-->
+              <div class="post-module" id="post-module"> 
+                <!-- Thumbnail-->
+                <div class="thumbnail">
+                  <div class="date"> <a>
+                    <div class="day"><i >{{i.Event_id}}</i></div>
+                    </a> </div>
+                  <img src= {{i.Event_img}} 
+                  class="img-responsive" alt=""> </div>
+                <!-- Post Content-->
+                <div class="post-content">
+                  <div class="category" >{{i.Event_name}}</div>  
+                  <h1 class="title">About event</h1>
+                  <P class="description">we have to write description</P>
+                  <h2 class="sub_title">Prize money</h2>
+                  <p class="description">incredible prize money of $30000....
+                    <label id="more_btn" class="btn btn-primary "><a class="waves-effect waves-light btn modal-trigger" data-toggle="modal"
+                       [attr.data-target]= "'#event_'+i.Event_id" >more </a></label>
+                  </p>
+                  
+                  <div class="post-meta"><span class="timestamp">
+                    <i class="fa fa-clock-">o</i> 6 mins ago</span>
+                    <span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span>
+                  </div>
+                </div>
+              
+              </div>
+              
+</div>
+
+<div class="modal" [id]= "'event_'+i.Event_id"  tabindex="-1" role="dialog" >
+   
+  <div class="modal-dialog" >
+      <div class="modal-content" >
+          <div class="modal-header"   >
+
+               <h1 class="modal-title" id="myModalLabel"  ><i>{{i.Event_name}}</i></h1>
+          </div>
+          <div class="modal-body">
+              <div role="tabpanel">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a class="n_tab" [attr.data-target]="'#uploadTab_'+i.Event_id" aria-controls="uploadTab" role="tab" data-toggle="tab">About Event</a>
+
+                      </li>
+                      <li role="presentation"><a class="n_tab" [attr.data-target]="'#browseTab_'+i.Event_id" aria-controls="browseTab" role="tab" data-toggle="tab">Prizes</a>
+
+                      </li>
+                      <li role="presentation"><a class="n_tab" [attr.data-target]="'#ev_gallery_'+i.Event_id" aria-controls="ev_gallery" role="tab" data-toggle="tab"> Gallery </a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content" >
+                      <div role="tabpanel" class="tab-pane active" data-dismiss="n_tab" [id]="'uploadTab_'+i.Event_id" >
+                          <h3 class="title">Rules</h3>
+                        <div *ngFor="let j of i.Event_rules">
+                            <p>{{j}}</p>
+                         </div>
+                      </div>
+                      <div role="tabpanel" data-dismiss="n_tab"class="tab-pane" [id]="'browseTab_'+i.Event_id">
+                        <div>
+                            <h3 class="title">Prizes</h3>
+                         <p> {{i.Event_prize}}
+                            New York, the largest city in the U.S., is an architectural marvel with plenty of historic mon
+                            uments, magnificent buildings and countless dazzling skyscrapers.
+                          </p></div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane " data-dismiss="n_tab" [id]="'ev_gallery_'+i.Event_id">
+                        <div>
+                          <h3 class="title">gallery</h3>
+                         <img   class="gal_img"src= {{i.Event_img}}>
+                      
+                        </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              <label   data-dismiss="modal" class="btn btn-success register" routerLink="/app-event-reg">Register to event</label>
+          </div>
+      </div>
+  </div>
+    </div>
+  
+</div>
+</div>
+</div> 
+</div>
+</div>

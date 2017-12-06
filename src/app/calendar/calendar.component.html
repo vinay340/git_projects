@@ -1,0 +1,140 @@
+<div id="wrapper">
+    <app-first></app-first>
+    
+    <div id="page-content-wrapper">
+      <div id="page-content">
+         
+  
+  <div class=" col-md-8 well">
+    <fieldset >
+      <div class="icon">
+        <i title="EDIT" class=" fa fa-pencil-square-o fa-1x" ></i>&nbsp;&nbsp;
+        <i title="DELETE" class="fa fa-trash-o fa-1x" data-toggle="modal" data-target='#delete_Modal'></i>
+      </div>
+       <!-- DELETE modal -->
+       <div class="modal fade" id='delete_Modal' role="dialog">
+          <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <i class="fa fa-exclamation-triangle fa-3x" aria-hidden="true"></i>
+                      <p>Are you sure you want to delete <strong>DELETE&nbsp;<i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;NEWS ?</strong>
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="submit" class="btn btn-default">DELETE</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="wrapper recent-updated"> 
+        <div id="upadtes-box" role="tabpanel" class="collapse show">
+          <ul class="news list-unstyled">
+            <li class="d-flex justify-content-between" *ngFor="let n of news" > 
+              <div class="left-col d-flex">
+               <fieldset class="well n_well">
+                <div class="row">
+                <div class="col-md-6">
+                    <strong>{{n.headline}}-{{n.id}}</strong></div>
+                    <div class="col-md-6 text-right">
+                            {{n.date}}
+                          </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-4">
+                        <input type="checkbox">&nbsp;
+                    <img src="{{n.img}}">
+                </div>
+                <div class="col-md-8">
+                <p>{{n.news}}</p>
+            </div>    
+              </div>
+               </fieldset>
+               
+            </div>
+            
+            </li> 
+          </ul>
+        </div>
+      </div>
+    </fieldset>   
+    
+  </div>
+  <div class="col-md-4 well" >
+  <form class="form-horizontal">
+    <fieldset >
+        <legend>ADD NEWS</legend>
+        <div class="wrapper "> 
+          <div id="upadtes-box" role="tabpanel" class="collapse show">
+            <div class="form-group" >
+              <label class="col-md-2 control-label"  for="headline">Headline</label>
+              <input class="col-md-8 form-control" name="headline" [(ngModel)]="Head_line"  type="text">
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="headline">Image</label><br>
+              <input class="col-md-8" type="file">
+              
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="news">News</label>
+              <textarea class="col-md-8 form-control" name="News" [(ngModel)]="News"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="date">Date</label>
+             
+              <input class="col-md-8 form-control"name="Date"  [(ngModel)]="Date" type="date">
+            </div>
+            <div class="form-group submitbuttn">
+                <button  type="submit" (click)="add(Head_line,News,Date)">ADD</button>
+                <button class="cbutton" type="reset" >CANCEL</button>
+            </div>
+            
+          </div>
+        </div>
+      </fieldset>   
+    </form>
+    </div>
+   
+
+
+
+    <div class="row">
+         <div class="col-md-8"   *ngFor="let n of Add">         
+                    <div id="upadtes-box" role="tabpanel" class="collapse show">
+                      <ul class="news list-unstyled">
+                        <li class="d-flex justify-content-between"  > 
+                           <fieldset class="well n_well">
+                            <div class="row">
+                            <div class="col-md-6">
+                                <strong>{{n.Head_line}}</strong></div>
+                                <div class="col-md-6 text-right"  pattern="dd/MM/YYYY">
+                                    {{n.Date}}
+                                      </div>
+ 
+                            </div>
+                            <br>
+                            <div class="row">
+                              <div class="col-md-4">
+                                    <input type="checkbox">&nbsp;
+                                <img src="../assets/images/dance.jpg">
+                            </div>
+                            <div class="col-md-8">
+                            <p>{{n.News}}</p>
+                        </div>    
+                          </div>
+                           </fieldset>
+                           
+                        
+                        </li> 
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+      </div>
+     
+      </div>
+         

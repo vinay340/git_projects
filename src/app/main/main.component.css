@@ -1,0 +1,136 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+@import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+
+p{
+	margin: auto;
+}
+#main1{
+	z-index: 1;
+
+}
+
+.verticalLine {
+	border-left: thick solid #ff0000;
+  }
+  #profile{
+	background-color: #a8a3e0;
+	}
+	.column-right {
+		float:inherit;
+		
+	}
+	@media (min-width: 992px) {
+		.col-md-4 {
+			float: left;
+		}
+	}
+	.main{
+		background-color: black;
+	}
+	
+	
+	
+	#sum_box h4 {
+		text-align: left;
+		margin-top: 0px;
+		font-size: 45px;
+		margin-bottom: 0px;
+		padding-bottom: 15px;
+		
+	}
+	#sum_box p{
+		font-size: 20px;
+	}
+	
+	
+	#sum_box .db:hover {
+		background: #40516f;
+		color: #fff;
+	}
+	
+	
+	
+	
+	#sum_box .db:hover .icon {
+		opacity: 2;
+		color: #cccaca;
+	}
+	
+	#sum_box .icon {
+		color: #fff;
+		font-size: 55px;
+		margin-top: 8px;
+		margin-bottom: 7px;
+		float: right;
+		padding-top:5px;
+
+	}
+	
+	
+	.panel.income.db.mbm{
+			background-color: #5cb85c;
+	}
+	
+	.panel.profit.db.mbm{
+			background-color: #5bc0de;
+	}
+	
+	
+	.panel.task.db.mbm{
+			background-color: #f0ad4e;
+	}
+	#noti_panel{
+		 background-color: rgb(236, 71, 148);
+	}
+	.panel.violet.db.mbm{
+		background-color: violet;
+	}
+	.gallery{
+		margin-top: 15mm;
+		text-align: center;
+		font-size: 30px;
+	}
+	#edit_profile :hover {
+		background-color:transparent;
+	}
+	#regi{
+		background-color: cadetblue;
+	}
+	#noti_panel{
+	margin-bottom: 20px;
+}
+
+.panel_border{
+	border-radius: 25px;
+	margin-bottom: 30px;
+
+}
+.g_carousel{
+	height: 100%;
+	width: 100%;
+}
+.well {
+    padding: 19px;
+    margin-bottom: 20px;
+    border: 1px solid initial;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	margin-top: 010px;
+	height: 550px;
+	width: 65.7%;
+	overflow:hidden;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.g_margin {
+    width: 33.33333333%;
+    margin-top: -45px;
+}
+.display{
+	text-align: center;
+	color: white;
+	text-decoration-line: none;
+}
