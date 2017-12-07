@@ -108,7 +108,7 @@
   @media (max-width:767px) {
   
   #wrapper {
-	padding-left: 0;
+	padding-left: 15px;
   }
   
   #sidebar-wrapper {
@@ -116,7 +116,7 @@
   }
   
   #wrapper.active {
-	position: relative;
+	position: inherit;
 	left: 250px;
   }
   
@@ -124,6 +124,7 @@
 	left: 250px;
 	width: 250px;
 	transition: all 0.4s ease 0s;
+	
   }
   
   #menu-toggle {

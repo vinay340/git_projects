@@ -19,14 +19,6 @@ export class HeaderComponent implements OnInit {
      
   });
  
-   $('.btn_toggle').click(function(e){
-     e.preventDefault();
-      // $('#sidebar-wrapper').hide();
-    //  $('#menu-toggle').show('fast');
-     
-      // $("#wrapper").toggleClass("active");
-     
-   })
   }
 
 }

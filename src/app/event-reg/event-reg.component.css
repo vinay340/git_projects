@@ -66,3 +66,9 @@
 #success_msg{
   color: #000;
 }
+select option{
+  position: relative;
+  display: inline-block;
+
+
+}

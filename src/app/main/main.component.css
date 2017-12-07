@@ -112,22 +112,22 @@ p{
 }
 .well {
     padding: 19px;
-    margin-bottom: 20px;
     border: 1px solid initial;
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-	margin-top: 010px;
+	margin-top: 10px;
 	height: 550px;
-	width: 65.7%;
 	overflow:hidden;
-	margin-left: 10px;
 	text-align: center;
+
 }
 
 .g_margin {
-    width: 33.33333333%;
-    margin-top: -45px;
+	margin-top: 10px;
+	border: hidden;
+    border-radius: 4px;
+	
 }
 .display{
 	text-align: center;
