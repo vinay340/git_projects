@@ -18,6 +18,14 @@ export class HeaderComponent implements OnInit {
       
      
   });
+  $(document).ready(function(){
+ $('.btn_toggle').click(function(){
+  //  $('#sidebar-wrapper').animate({
+  //    width:'toggle'
+  //  }, 300);
+  $('#sidebar-wrapper').slideToggle()
+   });
+  });
  
   }
 

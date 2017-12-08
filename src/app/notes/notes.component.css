@@ -1,0 +1,54 @@
+.box1 {
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 5px;
+    border:hidden;
+  }
+  .tnote{
+    resize: none;
+    width: 600px;
+    height: 80px;
+    background-color: #F7F7F7; 
+    color: #1E1F33;
+  }
+  .f1{
+    background-color:  #E6E6DF; 
+     border-width: inherit; 
+      border: "hidden";
+    display: inline-block;
+    margin-left:300px;
+  }
+  .f2{
+    background-color: #c7c6ba87;
+    border-width: inherit; 
+    border: "hidden";
+  display: inline-block
+  }
+  .box2{
+    font-size: 50px;
+    
+   background-color: #E6E6DF; 
+   color:  #1E1F33;
+    border:hidden;
+  }
+  .tnote1{
+   resize: none;
+    width: 610px;
+    height: 40px;
+    text-align: left;
+    padding: 30px;
+    border: hidden;
+   overflow: hidden;
+    background-color: #E6E6DF; 
+    color: #1E1F33;
+    font-size: 20px;
+  }
+  .line{
+    border: width border-style color;
+    border: hidden;
+    background-color:#f3f3f3;  
+  }
+  #n_ame{
+    color: #1E1F33;
+  }
+  

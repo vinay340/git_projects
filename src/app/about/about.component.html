@@ -1,42 +1,16 @@
 
-<div id="wrapper">
-    <app-first></app-first>
-    
-    <div id="page-content-wrapper">
-      <div id="page-content">
-    <div class="container-fluid " >
-<fieldset class="f1 well" >
-    <div class="Notes"  >
-     <ol id="n_ame">
-     <li *ngFor="let note of notes" >
-            
-            <fieldset class ="f2 well" >
-           
-            <h3 id="n_ame">Notes</h3> 
-            <input  type="checkbox"  class="box1">
-             <textarea disabled name="test"  align="left" class="tnote">{{note.newnote}}</textarea>
-             <img src="{{note.newnote1}}">
-                
-            </fieldset>
-           <hr class="line">
-         </li>   
-     </ol> 
-     <br>
-     
- </div> 
-     <div>
-             <form   name="noteapp" id="namee"  >
-             <textarea [(ngModel)]="notetext" ng-disabled="addNote"  name="texting" class="tnote1" placeholder ="write some text here"></textarea>
-             
-             <button  class="box2 material-icons"type="submit" (click)="addNote(notetext,notetext1)"  > + </button>
-             
-             <hr>
-           
-          <!-- <button class="a" type="submit" (click)="viewall()">View all Notes</button>  -->
-             </form>
-             </div>
- </fieldset>
+<head>
+        <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+        
+</head>
+
+<div class="col-md-12">
+    <div class="btn btn-success" id="btn_modal">
+        modal
     </div>
-      </div>
-    </div>
+    <div class="modal fade" id="mymodal">
+    <p>model open</p>    
+    </div>   
 </div>

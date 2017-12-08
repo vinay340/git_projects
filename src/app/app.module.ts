@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import {FormsModule } from '@angular/forms';
 import{ HttpModule } from '@angular/http';
+import * as $ from 'jquery';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
@@ -15,6 +16,7 @@ import { SigninComponent } from './signin/signin.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { JsonApiModule } from 'angular2-jsonapi';
 import { EventRegComponent } from './event-reg/event-reg.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 const eweek :Routes=[
@@ -27,6 +29,8 @@ const eweek :Routes=[
   {path:'app-signin',component:SigninComponent},
   {path:'app-calendar',component:CalendarComponent},
   {path:'app-event-reg',component:EventRegComponent},
+  {path:'app-notes',component:NotesComponent},
+  
   
   
   
@@ -43,6 +47,7 @@ const eweek :Routes=[
     SigninComponent,
     CalendarComponent,
     EventRegComponent,
+    NotesComponent,
   ],
   imports: [
     BrowserModule,FormsModule,HttpModule,RouterModule.forRoot(eweek),JsonApiModule

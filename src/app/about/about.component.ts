@@ -1,6 +1,6 @@
 import { Component, OnInit ,ViewChild} from '@angular/core';
-import * as $ from 'jquery';
-
+// import * as $ from 'jquery';
+var $: any;
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -8,26 +8,23 @@ import * as $ from 'jquery';
 })
 export class AboutComponent implements OnInit {
 
-  newnote:string;
-  notes:any[];
-  noteobj:any;
-  notetext:string='';
-  notetext_file:string='';
+
  
    constructor() {
-       this.newnote="";
-   this.notes=[];
+    
     }
     
- addNote(evt,evt1){
- this.newnote=evt;
-  this.noteobj={newnote:this.newnote};
-   this.notes.push(this.noteobj);
- this.notetext='';
- }
  
  
-  ngOnInit() {}
+ 
+  ngOnInit() {
+$(document).ready(function(){
+  $('#btn_modal').click(function(){
+    $('#mymodal').modal();
+  })
+})
+
+  }
   }
   
 
