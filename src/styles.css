@@ -1,10 +1,12 @@
-
+body{
+	background-color: #1E1F33;
+	color: white;
+	
+}
 #wrapper {
 	padding-left: 220px;
 	transition: all 0.4s ease 0s;
 	font-family: cursive, Tahoma, Geneva, Verdana, sans-serif;
-	background-color: #1E1F33;
-	color: white;
 	font-size: 16px;
 	height: 100%;
 	overflow-y: auto;
@@ -23,7 +25,6 @@
 		overflow-y: auto;
 		z-index: 1000;
 		transition: all 0.4s ease 0s;
-		background-color: inherit;
 	}
   
   #wrapper.active {
@@ -40,7 +41,6 @@
 	padding-top: 100px;
 	transition: all 0.4s ease 0s;
 	display: block;
-	background-color: #1E1F33;
   }
   
   .sidebar-nav {
@@ -49,8 +49,8 @@
     width: 200px;
 	list-style: none;
 	padding: 0;
-	background-color: inherit;
-	color: white;
+	/* background-color: inherit;
+	color: white; */
   }
   .sidebar-nav li {
 	line-height: 50px;
@@ -90,11 +90,11 @@
   .sidebar-nav > .sidebar-brand a {
 	color: white;
   }
-  
+/*   
   .sidebar-nav > .sidebar-brand a:hover {
 	
 	color: #000;
-  }
+  } */
   
   #menu-toggle {
 	  text-decoration: none;
@@ -161,7 +161,6 @@
 }
 .navbar-header{
 	padding:10px;
-	background-color: inherit;
 }
 #name :hover{
 	color:wheat;

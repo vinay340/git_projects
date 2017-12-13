@@ -11,10 +11,14 @@
 
 } 
 .icon{
-    margin-left: 38px;
+    margin-left: 8px;
     width: 20px;
+    font-size: larger;
 }
-
+.t_name{
+    font-size: larger;
+    
+}
 .t_name.active{
     color: wheat;
 }
